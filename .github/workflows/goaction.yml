@@ -4,13 +4,18 @@ on:
   push:
     branches: [master]
 jobs:
-  goreadme:
+  goaction:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
-    - name: Update readme according to Go doc
-      uses: posener/goreadme@v1
+    - name: Update action files
+      uses: posener/goaction@v1
       with:
-        title: Goaction Example
+        path: main.go
+        name: goaction-example
         github-token: '${{ secrets.GITHUB_TOKEN }}'
+    - name: Example
+      uses: ./
+      with:
+        who: me
