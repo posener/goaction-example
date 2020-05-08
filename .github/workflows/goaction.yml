@@ -12,7 +12,6 @@ jobs:
     - name: Update action files
       uses: posener/goaction@v1
       with:
-        path: main.go
         name: goaction-example
         github-token: '${{ secrets.GITHUB_TOKEN }}'
     - name: Example
