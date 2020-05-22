@@ -1,5 +1,5 @@
 /*
-Package main is an example of the simplest goaction sctipt.
+Package main is an example of the simplest goaction script.
 
 Notice that the only non-generated file is ./main.go.
 The generated files were generated using Github action ./github/workflows/goaction.yml.
